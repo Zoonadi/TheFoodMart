@@ -1,0 +1,43 @@
+{
+    "music": [
+        {
+            "id":1,
+            "name": "Cinematic",
+            "price": 11190,
+            "imgName":"Cinematic.jfif"
+        },
+        {
+            "id": 2,
+            "name": "Ocean Eyes",
+            "price": 10090,
+            "imgName": "Ocean Eyes.jfif"
+        },
+        {
+            "id": 3,
+            "name": "Mobile Ochestra",
+            "price": 13090,
+            "imgName": "Mobile Orchestra.jfif"
+        },
+        {
+            "id": 4,
+            "name": "All Things Bright and Beautiful",
+            "price": 12190,
+            "imgName": "All Things Bright and Beautiful.jfif"
+        }
+
+    ],
+    "merch": [
+        {
+            "id": 5,
+            "name": "Owl City Shirt",
+            "price": 12190,
+            "imgName": "owl city shirt.jpg"
+        },
+        {
+            "id": 6,
+            "name": "Firefilies Shirt",
+            "price": 11190,
+            "imgName": "Firefiles Shirt.jpg"
+        }
+    ]
+}
