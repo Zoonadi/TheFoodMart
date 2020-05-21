@@ -4,13 +4,36 @@
         <title> The Food Mart</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+            integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+            crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="file:///C:/xampp/htdocs/atatusoft/ecommerce_stage04_stripe/public/bootstrap.min.css">
+        <script src="file:///C:/xampp/htdocs/atatusoft/ecommerce_stage04_stripe/public/bootstrap.min.js"> </script>
         </head>
         <body>
             <header class="main-header">
+
+                <nav class="main-nav nav site-header sticky-top py-1 navbar navbar-light" style="background-color: #125e03;">
+                    <div class="container d-flex flex-column flex-md-row justify-content-between">
+                        <a class="py-2 d-none d-md-inline-block" href="index.html">The Food Mart</a>
+                        <a class="py-2 d-none d-md-inline-block" href="/store">Store</a>
+                        <a class="py-2 d-none d-md-inline-block" href="about.html">About</a>
+                
+                </nav>
+                
+                <!--
                 <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="store.html">STORE</a></li>
+                    <li><a href="/store">STORE</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     </ul>
                     </nav>
@@ -19,8 +42,16 @@
                     <div class="container">
                     <button class ="btn btn-header" type="button">Get our Latest Album</button>
                     </div>
-                    <!-- TODO: Find a background image -->
-                    <button class ="btn btn-header btn-play" type="button">&#9658;</button> 
+                    TODO: Find a background image -->
+                    
+        <div class="jumbotron jumbotron-image">
+            <h1 class="text-white display-2">Welcome to the Food Mart Supermarket!</h1>
+             <h2 class="text-white">Where Shopping for the Products you like is done with a Click of a Button.</h2>
+            <hr class="my-4">
+            <h2 class="text-white">Fresh supplies are in store for HERE for You.</h2>
+            <a class="btn btn-success btn-lg" href="/store" role="button">Click to Start</a>
+            </div>
+                    
             </header>
             <section class="content-section container">
                 <h2 class="section-header">TOURS</h2>
@@ -32,7 +63,7 @@
                         
                         <span class="tour-item tour-arena">GARDEN CITY</span>
                         
-                        <button class="btn tour-item tour-btn btn-primary" type="button">BUY TICKETS</button>
+                        <button class="btn tour-item tour-btn btn-success" type="button">BUY TICKETS</button>
                             
                     </div>
                     <div class="tour-row">
@@ -59,24 +90,91 @@
                     </div>
                     
                 </div>
+               
+<!--
+                <div class="image-row mr-md-3 pt-3 px-3 pt-md-5 text-center overflow-hidden">
+                    
+                    
+                <img src="images/homepage_1.jpg" width="1349" height="580">
+                
+                </div>
+            
             </section>
-                <footer class="main-footer">
-                    <div class="container main-footer-container">
-                        <h3 class="band-name">The Food Mart</h3>
-                        <ul class="nav footer-nav">
-                            <li>
-                                <a href="https://facebook.com" target="_blank"><img src="images/facebook-logo.png" width="50"
-                                        height="50">
-                                </a></li>
-                            <li>
-                                <a href="https://www.instagram.com" target="_blank"><img src="images/instagram logo.png" width="50"
-                                        height="50">
-                                </a></li>
-                            <li>
-                                <a href="https://www.twitter.com" target="_blank"><img src="images/twitter logo.jpg" width="50"
-                                        height="50">
-                                </a></li>
+
+            <div class="d-flex justify-content-between bg-warning t mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+                <div class="my-3 p-3">
+                    <h2 class="display-5 text-success">Fresh Organic Food</h2>
+                    <h4 class="lead text-success">From our own Zambian Farms.</h4>
+                </div>
+                <div class="image-row mx-auto" style="width: 80%; height: 450px; border-radius: 21px 21px 0 0;"></div>
+            </div>
+        </div>
+-->
+        <hr class="featurette-divider">
+
+    <div class="row featurette">
+        <div class="col-md-7">
+            <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span>
+            </h2>
+            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod
+                semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus
+                commodo.</p>
+        </div>
+        <div class="col-md-5">
+            <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="images/homepage_1.jpg" width="500"
+                height="500"  focusable="false">
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <div class="d-flex justify-content-between bg-warning t mr-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+            <div class="my-3 p-3">
+                <h2 class="display-5 text-success">Fresh Organic Food</h2>
+                <h4 class="lead text-success">From our own Zambian Farms.</h4>
+            </div>
+            <div class="image-row mx-auto" style="width: 80%; height: 450px; border-radius: 21px 21px 0 0;"></div>
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+        <footer class="container py-5 main-footer">
+            <div class=" row">
+                <div class="col-12 col-md">
+                    <h3 class="d-block mb-3 footer-name">The Food Mart</h3>
+                    <small class="d-block mb-3 text-white footer-name lead">Copyright 2020</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h3 class="company-name footer-name">Social Media</h3>
+                    <ul class="list-unstyled text-small nav footer-nav">
+                        <li>
+                            <a class="text-white footer-name lead" href="https://facebook.com">Facebook</a>
+                        </li>
+                        <li>
+                            <a class="text-white footer-name lead" href="https://www.instagram.com">Instagram</a>
+                        </li>
+                        <li>
+                            <a class="text-white footer-name lead" href="https://www.twitter.com">Twitter</a>
+                        </li>
                         </ul>
+                    </div>
+                <div class="col-6 col-md">
+                    <h3 class="company-name footer-name">About Us</h3>
+                    <ul class="list-unstyled text-small nav footer-nav">
+                        <li>
+                            <a class="text-white footer-name lead" href="#">Team</a>
+                        </li>
+                        <li>
+                            <a class="text-white footer-name lead" href="#">Location</a>
+                        </li>
+                        <li>
+                            <a class="text-white footer-name lead" href="#">Privacy</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                </div>
                     </div>
                 </footer>
         </body>
