@@ -1,43 +1,126 @@
 {
-    "music": [
+    "medical_supplies": [
         {
-            "id":1,
-            "name": "Cinematic",
+            "id": 1,
+            "name": "Hand Sanitizer",
             "price": 11190,
-            "imgName":"Cinematic.jfif"
+            "imgName": "hand_sanitizer.jpg"
         },
         {
             "id": 2,
-            "name": "Ocean Eyes",
+            "name": "Disposable Face Masks",
             "price": 10090,
-            "imgName": "Ocean Eyes.jfif"
+            "imgName": "facemasks.jpg"
         },
         {
             "id": 3,
-            "name": "Mobile Ochestra",
+            "name": "Disposable Gloves",
             "price": 13090,
-            "imgName": "Mobile Orchestra.jfif"
+            "imgName": "gloves.jpg"
+        }
+    ],
+    
+    "meat": [
+        {
+            "id":4,
+            "name": "Chicken",
+            "price": 11190,
+            "imgName":"chicken.jpg"
         },
         {
-            "id": 4,
-            "name": "All Things Bright and Beautiful",
-            "price": 12190,
-            "imgName": "All Things Bright and Beautiful.jfif"
-        }
-
-    ],
-    "merch": [
-        {
             "id": 5,
-            "name": "Owl City Shirt",
-            "price": 12190,
-            "imgName": "owl city shirt.jpg"
+            "name": "Kapenta",
+            "price": 10090,
+            "imgName": "kapenta.jpg"
         },
         {
             "id": 6,
-            "name": "Firefilies Shirt",
+            "name": "Fresh Fish",
+            "price": 13090,
+            "imgName": "fish.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Pork Chops",
+            "price": 12190,
+            "imgName": "pork.jpg"
+        },
+        {
+            "id":8,
+            "name":"Sausage",
+            "price":10090,
+            "imgName":"sausage.jpg"
+        }
+
+    ],
+    "vegetables": [
+        {
+            "id": 9,
+            "name": "Chibwabwa (Pumplin Leaves)",
+            "price": 12190,
+            "imgName":"chiwawa.jpg"
+        },
+        {
+            "id": 10,
+            "name": "Kalembula (Sweet Potato Leaves)",
             "price": 11190,
-            "imgName": "Firefiles Shirt.jpg"
+            "imgName": "kalembula.jpg"
+        },
+        {
+            "id": 11,
+            "name": "Rape",
+            "price": 12190,
+            "imgName": "rape.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Purple Onion",
+            "price": 12190,
+            "imgName": "purple_onion.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Onion",
+            "price": 12190,
+            "imgName": "onion.jpg"
+        }
+    ],
+    "fruits": [
+        {
+            "id": 14,
+            "name": "Pineapple",
+            "price": 12190,
+            "imgName": "pineapple.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Lemon",
+            "price": 11190,
+            "imgName": "lemon.jpg"
+        },
+        {
+            "id": 16,
+            "name": "Apple",
+            "price": 12190,
+            "imgName": "apple.jpg"
+        },
+        {
+            "id": 17,
+            "name": "Tomato",
+            "price": 12190,
+            "imgName": "tomato.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Banana",
+            "price": 12190,
+            "imgName": "banana.jpg"
+        },
+        {
+            "id": 19,
+            "name": "Granadilla",
+            "price": 12190,
+            "imgName": "granadilla.jpg"
         }
     ]
 }

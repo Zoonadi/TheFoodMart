@@ -3,8 +3,15 @@
 
 <head>
     <title> The Food Mart | Store</title>
-    <meta name="description" content="This is the description">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="file:///C:/xampp/htdocs/atatusoft/ecommerce_stage04_stripe/public/bootstrap.min.css">
+    <script src="file:///C:/xampp/htdocs/atatusoft/ecommerce_stage04_stripe/public/bootstrap.min.js" > </script> 
     <script src="https://checkout.stripe.com/checkout.js" defer></script>
     <script>
         var stripePublicKey = '<%= stripePublicKey %>'
@@ -14,47 +21,171 @@
 
 <body>
     <header class="main-header">
-        <nav class="main-nav nav">
-            <ul>
-                <li><a href="index.html">HOME</a></li>
-                <li><a href="store.html">STORE</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-            </ul>
-        </nav>
-        <h1 class="band-name band-name-large">The Food Mart</h1>
-    </header>
-    <section class="container content-section">
 
+        <nav class="main-nav nav site-header sticky-top py-1 navbar navbar-light" style="background-color: #125e03;">
+            <div class="container d-flex flex-column flex-md-row justify-content-between">
+            <a class="py-2 d-none d-md-inline-block" href="index.html">The Food Mart</a>
+            <a class="py-2 d-none d-md-inline-block" href="/store">Store</a>
+            <a class="py-2 d-none d-md-inline-block" href="about.html">About</a>
         
-        <h2 class="section-header">MUSIC</h2>
-        <div class="shop-items">
-            <% items.music.forEach(function(item) { %>
-        <div class="shop-item" data-item-id="<%= item.id %>">
-            <span class="shop-item-title"><%= item.name %></span>
+        </nav>
+        
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/images/carousel_01.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-dark">Protective Supplies in Stock</h2>
+                    <h4 class="text-dark">Buy Protective Gear to Combat COVID19.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/carousel_02.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-dark">Organic Vegatables</h2>
+                    <h4 class="text-dark">Get Fresh Vegatables to Boost your Immunne System.</h4>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/images/carousel_03.jpg" class="d-block w-100 img-fluid" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2 class="text-light">Variety Fruits</h2>
+                    <h4 class="text-light">Buy a variety of Fruits that are Home grown in Zambia.</h4>
+                </div>
+            </div>
+        <div class="carousel-item">
+            <img src="/images/carousel_04.jpg" class="d-block w-100 img-fluid" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h2 class="text-dark">Tender Meats in stock</h2>
+                <h4 class="text-dark">Get the Best Meat in Town from Here!</h4>
+            </div>
+        </div>
+    </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>  
+<div>
+
+    </header>
+
+    <button type="button" class="btn btn-success btn-sm btn float-right" data-toggle="modal" data-target="#staticBackdrop">
+        Shopping Cart <img src="images/shopping cart.png" />
+    </button>
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title shop-item-title" id="staticBackdropLabel">Your Shopping Cart</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-row">
+                        <span class="cart-item cart-header cart-column">Item</span>
+                        <span class="cart-price cart-header cart-column">Price</span>
+                        <span class="cart-quantity cart-header cart-column">Quantity</span>
+                    </div>
+                    <div class="cart-items">
+                    </div>
+                    <div class="cart-total">
+                        <strong class="cart-total-title">Total</strong>
+                        <span class="cart-total-price">K0</span>
+                    </div> 
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-success btn-purchase" role="button">Purchase</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <section class="content-section container">
+        <h2 class="section-header text-body">MEDICAL HEALTHCARE SUPPLIES</h2>
+        <div class="shop-items bg-light">
+            <% items.medical_supplies.forEach(function(item) { %>
+            <div class="shop-item card border-success" data-item-id="<%= item.id %>">
+                <span class="shop-item-title card-title card-body"><%= item.name %></span>
+                <img class="shop-item-image" src="images/<%= item.imgName %>">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">K<%= item.price / 100 %></span>
+                    <button class="btn btn-success shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <% }) %>
+    </section>
+
+<hr class="featurette-divider">
+
+    <section class="content-section container">
+        <h2 class="section-header text-body">MEAT</h2>
+        <div class="shop-items bg-light">
+            <% items.meat.forEach(function(item) { %>
+        <div class="shop-item card border-success" data-item-id="<%= item.id %>">
+            <span class="shop-item-title card-title card-body"><%= item.name %></span>
             <img class="shop-item-image" src="images/<%= item.imgName %>">
             <div class="shop-item-details">
                 <span class="shop-item-price">K<%= item.price / 100 %></span>
-                <button class= "btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                <button class= "btn btn-success shop-item-button" role="button">ADD TO CART</button>
             </div>
         </div>
     <% }) %>
-        </div>
-          
+        </div>    
     </section>
-    <section class="container content-section">
-        <h2 class="section-header">MERCH</h2>
-        <div class="shop-items">
-            <% items.merch.forEach(function(item) { %>
-                <div class="shop-item" data-item-id="<%= item.id %>">
-                    <span class="shop-item-title"><%= item.name %></span>
+
+    <hr class="featurette-divider">
+
+    <section class="content-section container">
+        <h2 class="section-header text-body">VEGETABLES</h2>
+        <div class="shop-items bg-light">
+            <% items.vegetables.forEach(function(item) { %>
+                <div class="shop-item card border-success" data-item-id="<%= item.id %>">
+                    <span class="shop-item-title card-title card-body"><%= item.name %></span>
                     <img class="shop-item-image" src="images/<%= item.imgName %>">
                     <div class="shop-item-details">
                         <span class="shop-item-price">K<%= item.price / 100 %></span>
-                        <button class="btn btn-primary shop-item-button" role="button">ADD TO CART</button>
+                        <button class="btn btn-success shop-item-button" role="button">ADD TO CART</button>
                     </div>
                 </div>
             <% }) %>
     </section>
+
+    <hr class="featurette-divider">
+
+    <section class="content-section container">
+        <h2 class="section-header text-body">FRUITS</h2>
+        <div class="shop-items">
+            <% items.fruits.forEach(function(item) { %>
+            <div class="shop-item card border-success" data-item-id="<%= item.id %>">
+                <span class="shop-item-title card-title card-body"><%= item.name %></span>
+                <img class="shop-item-image" src="images/<%= item.imgName %>">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">K<%= item.price / 100 %></span>
+                    <button class="btn btn-success shop-item-button" role="button">ADD TO CART</button>
+                </div>
+            </div>
+            <% }) %>
+    </section>
+
+<!--
     <section class="container content-section">
         <h2 class="section-header">CART</h2>
         <div class= "cart-row">
@@ -70,23 +201,45 @@
         </div>
             <button class="btn btn-primary btn-purchase" role="button">PURCHASE</button>
     </section>
-    <footer class="main-footer">
-        <div class="container main-footer-container">
-            <h3 class="band-name">The Food Mart</h3>
-            <ul class="nav footer-nav">
-                <li>
-                    <a href="https://facebook.com" target="_blank"><img src="images/facebook-logo.png" width="50"
-                            height="50">
-                    </a></li>
-                <li>
-                    <a href="https://www.instagram.com" target="_blank"><img src="images/instagram logo.png" width="50"
-                            height="50">
-                    </a></li>
-                <li>
-                    <a href="https://www.twitter.com" target="_blank"><img src="images/twitter logo.jpg" width="50"
-                            height="50">
-                    </a></li>
-            </ul>
+-->
+<hr class="featurette-divider">
+
+    <footer class="container py-5 main-footer">
+        <div class=" row">
+            <div class="col-12 col-md">
+                <h3 class="d-block mb-3 footer-name">The Food Mart</h3>
+                <small class="d-block mb-3 text-white footer-name lead">Copyright 2020</small>
+            </div>
+            <div class="col-6 col-md">
+                <h3 class="company-name footer-name">Social Media</h3>
+                <ul class="list-unstyled text-small nav footer-nav">
+                    <li>
+                        <a class="text-white footer-name lead" href="https://facebook.com">Facebook</a>
+                    </li>
+                    <li>
+                        <a class="text-white footer-name lead" href="https://www.instagram.com">Instagram</a>
+                    </li>
+                    <li>
+                        <a class="text-white footer-name lead" href="https://www.twitter.com">Twitter</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h3 class="company-name footer-name">About Us</h3>
+                <ul class="list-unstyled text-small nav footer-nav">
+                    <li>
+                        <a class="text-white footer-name lead" href="#">Team</a>
+                    </li>
+                    <li>
+                        <a class="text-white footer-name lead" href="#">Location</a>
+                    </li>
+                    <li>
+                        <a class="text-white footer-name lead" href="#">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+    
+        </div>
         </div>
     </footer>
 </body>

@@ -32,6 +32,8 @@ var stripeHandler = StripeCheckout.configure({
     key: stripePublicKey,
     locale: 'auto',
     currency: 'zmw',
+    billing_address_collection: 'required',
+    zipCode: 'true',
     token: function(token){
         var items = []
         var cartItemContainer = document.getElementsByClassName('cart-items')[0]

@@ -1,0 +1,26 @@
+<h1>Hi <%=name %> Welcome to the Login Page</h1>
+
+<% if (messages.error) {%>
+    <%= messages.error %>
+<% } %>   
+
+<form action="/login" method="POST">
+
+    <div>
+        <label for="name">Email</label>
+        <input type="text" id="email" name="email" required>
+    </div>
+    <br>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+    </div>
+    <br>
+    <button type="submit">Login</button>
+    <a href="/register">Register</a>
+
+</form>
+
+<form action="/logout?_method-DELETE" method="POST">
+<button type="submit">Log Out</button>
+</form>
