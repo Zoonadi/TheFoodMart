@@ -32,6 +32,9 @@ var stripeHandler = StripeCheckout.configure({
     key: stripePublicKey,
     locale: 'auto',
     currency: 'zmw',
+    name: "The FoodMart",
+    image: "/images/delivery-truck.png",
+    description: "Skip the Line, Get started now!",
     billing_address_collection: 'required',
     zipCode: 'true',
     token: function(token){
